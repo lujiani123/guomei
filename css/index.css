@@ -34,6 +34,7 @@ header .nav_left li:first-child{
 	position: relative;
 	width: 80px;
 	padding: 0 10px;
+	z-index: 4;
 }
 header .nav_left li:first-child a{
 	float: left;
@@ -57,12 +58,16 @@ header .nav_left .first_li:hover i{
 }
 header .nav_left .first_li:hover{
 	background: #fff;
-	border: 1px solid #e6e6e6;
+	/*border: 1px solid #e6e6e6;*/
+	width:80px ;
+	height:31px ;
 	border-bottom: none;
 	z-index: 3;
+	border-top: none;
 }
-header .nav_left .first_li:hover  .nav_left_menu{
+header .nav_left .first_li:hover .nav_left_menu{
 	display: block;
+	
 }
 
 header .nav_left .tow_li a{
@@ -99,7 +104,8 @@ header .nav_left .nav_left_menu{
 	top: 31px;
 	left: 0;
 	border: 1px solid #e6e6e6;
-	z-index: 1;
+	z-index: 3;
+	background: #fff;
 }
 header .nav_left .nav_left_menu .top{
 	width: 290px;
@@ -131,6 +137,7 @@ header .nav_left .nav_left_menu .bottom{
     overflow: hidden;
     width: 290px;
     height: 114px;
+ 
 }
 
 header .nav_left .nav_left_menu .bottom p{
@@ -151,7 +158,7 @@ header .nav_left .nav_left_menu .bottom .bottom_b{
 }
 header .nav_left  strong{
 	position: absolute;
-    top: 140px;
+    top: 155px;
     width: 16px;
     height: 29px;
     cursor: pointer;
@@ -159,7 +166,7 @@ header .nav_left  strong{
     display: inline-block;
 }
 header .nav_left  strong:nth-of-type(2){
-	top:140px ;
+	top:155px ;
 	right: 16px;
 	background-position: -76px -513px;
 }
@@ -168,8 +175,16 @@ header .nav_left .nav_left_menu .bottom .bottom_b li{
     float: left;
     width: 80px;
     height: 70px;
+    text-align: center;
    
 }
+header .nav_left .ul_box{
+	width: 240px;
+	height: 70px;
+	margin: 10px 25px 0;
+	overflow: hidden;
+}
+
 header .nav_left .bottom_b ul{
 	margin: 0px;
     padding: 0px;
@@ -177,13 +192,15 @@ header .nav_left .bottom_b ul{
     list-style-type: none;
     z-index: 1;
     width: 720px;
+    height: 70px;
     left: 0px;
 }
 header .nav_left .bottom_b li em{
-	 display: block; display: block;
+	 display: block; 
 	 width: 40px;
-	 background: url(../images/ui.png) no-repeat;
 	 height: 40px;
+	margin: 0 auto;
+	 line-height: 40px;
 }
 
 /*右边*/
@@ -444,6 +461,10 @@ header .nav_right li:nth-child(6):hover{
 	    border-bottom: 1px solid #dd00a7;
     background: #f8f8f8;
 }
+
+
+
+
 .nav_2{
 	position: relative;
 	width: 1200px;
@@ -458,6 +479,7 @@ header .nav_right li:nth-child(6):hover{
     opacity: .9;
     text-align: center;
     line-height: 38px;
+   
 }
 .nav_2 .goods_list_nav{
 	position: absolute;
@@ -465,8 +487,38 @@ header .nav_right li:nth-child(6):hover{
 	left: 0;
 	width: 200px;
 	height: 448px;
-	z-index: 9999;
+	z-index: 3;
+	 background: rgba(51,51,51,.7);	     
 }
+
+.goods_list_nav li{
+	padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 1px;
+}  
+
+.goods_list_nav li a{
+	color: #fff;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei',arial;
+    font-weight: 200;
+    display: inline-block;
+    *margin-right: 0;
+    margin-right: 3px;
+}
+
+
+
+
+
+
+
+
+
 .mainnav{
 	float: left;
     height: 38px;
@@ -522,6 +574,10 @@ header .nav_right li:nth-child(6):hover{
 	width: 170px;
     height: 40px;
 }
+
+
+
+/*轮播图*/
 .banner{
 	margin: 0 auto;
 	height: 450px;
