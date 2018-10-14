@@ -112,26 +112,20 @@ $(function(){
 		$("#itme_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#first .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	
+	
 	$("#first u").click(function(){
-//		index=0;
-		var s=$("#first .main").length;
-//		console.log(s)
-		
-		
-		
-//		index=index-1;
-//	
-	 	$("#itme_list li").eq(index).addClass("active").siblings("li").removeClass("active")
-		$("#first .main").eq(index).addClass("active").siblings(".main").removeClass("active")
-                
-          if(index==s){
+	  if(index>=$("#first .main").length){
 		return index=0
 		}else{
 		index++;
-
 		}
-			console.log(index)
-		})
+		console.log(index)
+	 	$("#itme_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#first .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})		
+		
 })
 
    $(function(){
@@ -169,6 +163,18 @@ $(function(){
 		$("#two_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#two .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	
+	$("#two u").click(function(){
+	  if(index>=$("#two .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#two_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#two .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})		
 })
 
 //大的轮播图
@@ -238,6 +244,17 @@ $(function(){
 		$("#three_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#three .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	$("#three u").click(function(){
+	  if(index>=$("#three .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#three_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#three .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})		
 })
   $(function(){
             var n=0;//变量
@@ -274,6 +291,17 @@ $(function(){
 		$("#four_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#four .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	$("#four u").click(function(){
+	  if(index>=$("#four .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#four_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#four .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})		
 })
 
   $(function(){
@@ -311,6 +339,17 @@ $(function(){
 		$("#five_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#five .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	$("#five u").click(function(){
+	  if(index>=$("#five .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#five_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#five .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})	
 })
 
   $(function(){
@@ -347,6 +386,17 @@ $(function(){
 		$("#six_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#six .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	$("#six u").click(function(){
+	  if(index>=$("#six .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#six_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#six .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})	
 })
  $(function(){
             var n=0;//变量
@@ -382,6 +432,17 @@ $(function(){
 		$("#seven_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#seven .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	$("#seven u").click(function(){
+	  if(index>=$("#seven .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#seven_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#seven .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})	
 })
 $(function(){
             var n=0;//变量
@@ -417,6 +478,17 @@ $(function(){
 		$("#eight_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#eight .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	$("#eight u").click(function(){
+	  if(index>=$("#eight .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#eight_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#eight .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})	
 })
 $(function(){
             var n=0;//变量
@@ -452,6 +524,17 @@ $(function(){
 		$("#nine_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#nine .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
+	$("#nine u").click(function(){
+	  if(index>=$("#nine .main").length){
+		return index=0
+		}else{
+		index++;
+		}
+		console.log(index)
+	 	$("#nine_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#nine .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+             	
+	})	
 })
 $(function(){
             var n=0;//变量
