@@ -150,3 +150,58 @@ $(function(){
 		$("#four .main").eq(index).addClass("active").siblings(".main").removeClass("active")
 	})
 })
+
+//5F
+$(function(){
+	
+	$("#five_list li").hover(function(){
+		var index=$(this).index();
+//		console.log(index);
+		$("#five_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#five .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+	})
+})
+
+//6F
+$(function(){
+	
+	$("#six_list li").hover(function(){
+		var index=$(this).index();
+//		console.log(index);
+		$("#six_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#six .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+	})
+})
+
+//7F
+$(function(){
+	
+	$("#seven_list li").hover(function(){
+		var index=$(this).index();
+//		console.log(index);
+		$("#seven_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#seven .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+	})
+})
+
+//8F
+$(function(){
+	
+	$("#eight_list li").hover(function(){
+		var index=$(this).index();
+//		console.log(index);
+		$("#eight_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#eight .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+	})
+})
+
+//9F
+$(function(){
+	
+	$("#nine_list li").hover(function(){
+		var index=$(this).index();
+//		console.log(index);
+		$("#nine_list li").eq(index).addClass("active").siblings("li").removeClass("active")
+		$("#nine .main").eq(index).addClass("active").siblings(".main").removeClass("active")
+	})
+})
