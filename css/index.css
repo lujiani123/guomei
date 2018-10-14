@@ -1454,12 +1454,13 @@ header .nav_right li:nth-child(6):hover{
     width: 389px;
     float: left;
     overflow: hidden;
+    position: relative;
 }
 .floor .mc_c .slider{
 	position: relative;
 	height:470px ;
 }
-.floor .mc_c .slider strong{
+.floor .mc_c  strong{
 	
 	display: block;
     width: 30px;
@@ -1504,10 +1505,10 @@ header .nav_right li:nth-child(6):hover{
 	display: block;
 	
 }
-.floor .mc_c .slider .left_btn {
+.floor .mc_c  .left_btn {
 	left: 0;
 }
-.floor .mc_c .slider .right_btn{
+.floor .mc_c  .right_btn{
 		right: 0;
 		background:#000 url(../images/u1i.png) no-repeat -84px -74px;
 
