@@ -148,11 +148,29 @@ $(function(){
                 $("#frist_ol ol").eq(i).css({"background":"#f5004b"}).siblings("li").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
                 //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+//           $("#first_btn_left").click(function(){
+//	  		clearInterval(timer);
+//	  		index=$(this).index();
+//	  		if(index==0) showIndex=3;
+//	  		index--;
+//	  		showLi();
+  		
+		  	})
+		  	function showLi(){
+		  		$("#first_tu li").stop(true,true);
+		  		$("#first_tu li").fadeOut(400).eq(index).fadeIn(400);
+		  		$("#frist_ol ol").removeClass("active").eq(index).addClass("active")
+		  	}	
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
             })//鼠标移除继续轮播
+           
           })
+   
+  	
+   	
+ 
 
 //2f
 $(function(){
