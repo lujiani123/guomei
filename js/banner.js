@@ -115,12 +115,8 @@ $(function(){
 	
 	
 	$("#first u").click(function(){
-	  if(index>=$("#first .main").length){
-		return index=0
-		}else{
-		index++;
-		}
-		console.log(index)
+	    index = index>=($("#itme_list li").length-1)?0:(++index);
+	    // console.log(index)
 	 	$("#itme_list li").eq(index).addClass("active").siblings("li").removeClass("active")
 		$("#first .main").eq(index).addClass("active").siblings(".main").removeClass("active")
              	
@@ -145,22 +141,23 @@ $(function(){
                 var i=$(this).index();//取出当前li的索引
 //                alert(i);//弹出
                 $("#frist_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
-                $("#frist_ol ol").eq(i).css({"background":"#f5004b"}).siblings("li").css({"background":"#fff"});
+                $("#frist_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
-//           $("#first_btn_left").click(function(){
-//	  		clearInterval(timer);
-//	  		index=$(this).index();
-//	  		if(index==0) showIndex=3;
-//	  		index--;
-//	  		showLi();
-  		
-		  	})
-		  	function showLi(){
-		  		$("#first_tu li").stop(true,true);
-		  		$("#first_tu li").fadeOut(400).eq(index).fadeIn(400);
-		  		$("#frist_ol ol").removeClass("active").eq(index).addClass("active")
-		  	}	
+                    //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+              $("#first_btn_left").click(function(){
+                clearInterval(timer);
+                i = i>0?(--i):2;
+                  $("#frist_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                  $("#frist_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+              })
+                $("#first_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#frist_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#frist_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
+
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -245,7 +242,20 @@ $(function(){
                 $("#tow_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#tow_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#two_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#tow_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#tow_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#two_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#tow_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#tow_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -293,7 +303,20 @@ $(function(){
                 $("#three_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#ol_three ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#three_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#three_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#three_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#three_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#three_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#three_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -341,7 +364,20 @@ $(function(){
                 $("#four_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#four_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#four_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#four_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#four_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#four_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#four_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#four_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -389,7 +425,20 @@ $(function(){
                 $("#five_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#five_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#five_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#five_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#five_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#five_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#five_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#five_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -435,7 +484,20 @@ $(function(){
                 $("#six_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#six_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#six_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#six_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#six_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#six_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#six_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#six_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -481,7 +543,20 @@ $(function(){
                 $("#seven_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#seven_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#seven_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#seven_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#seven_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#seven_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#seven_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#seven_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -527,7 +602,21 @@ $(function(){
                 $("#eight_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#eight_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#eight_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#eight_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#eight_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#eight_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#eight_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#eight_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
+
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);
@@ -573,7 +662,20 @@ $(function(){
                 $("#nine_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
                 $("#nine_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
                 //$(this).css({"background":"red"}).siblings("li").css({"background":"#000"});
-                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、 
+                //找到第.eq(i).li、当前i变成红色。兄弟节点其余变成黑色、
+                $("#nine_btn_left").click(function(){
+                    clearInterval(timer);
+                    i = i>0?(--i):2;
+                    $("#nine_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#nine_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+                })
+                $("#nine_btn_right").click(function () {
+                    clearInterval(timer);
+                    i = i>=2?0:(++i);
+                    $("#nine_tu li").eq(i).fadeIn(1000).siblings("li").fadeOut(1000)//让鼠标移入当前的li显示对应的img.兄弟节点隐藏(淡出)
+                    $("#nine_ol ol").eq(i).css({"background":"#f5004b"}).siblings("ol").css({"background":"#fff"});
+
+                })
             })
             .mouseleave(function(){
                 timer=setInterval(run,3000);

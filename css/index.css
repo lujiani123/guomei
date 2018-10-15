@@ -260,7 +260,311 @@ header .nav_right li:nth-child(6):hover{
 }
 
 
+/*我的国美*/
+header .nav_right li:nth-child(2){
+	position: relative;
+}
+header .nav_right li:nth-child(2):hover .my_guomei{
+	display: block;
 
+}
+header .nav_right li:nth-child(2):hover .my_guomei a{
+	      color: #5E5E5E;
+}
+header .nav_right li:nth-child(2):hover .my_guomei .my_coupon a:hover{
+	color: #ff0027;
+}
+header .nav_right li:nth-child(2) .my_guomei .my_order li a:hover{
+	color: #ff0027;
+
+}
+header .my_guomei{
+	position: absolute;
+	top: 30px;
+	background: #fff;
+	left: 0;
+	overflow: hidden;
+	width: 260px;
+	padding: 0;
+	z-index:9999;
+	height:300px;
+	display: none;
+}
+header .my_guomei strong{
+	display: block;
+	font-weight: 700;
+	padding: 10px 10px 0;
+	font: 12px/24px Arial,"Microsoft YaHei";
+	color: #888;
+}
+.my_guomei li{
+	font: 12px/24px Arial,"Microsoft YaHei";
+	color: #888;
+}
+header .my_guomei strong a{
+	color: #069;
+}
+header .my_guomei .my_order{
+	padding: 0 0 9px;
+	margin: 0 10px;
+	border-bottom: 1px solid #f3f3f3;
+	overflow: hidden;
+	width: 240px;
+	height: 85px;
+}
+
+.my_guomei .my_order li{
+	float: left;
+	width: 120px;
+	line-height: 25px;
+	height: 25px;
+}
+
+.my_guomei ul  li:nth-child(4){
+	background: none;
+	padding-left: 9px;
+}
+.my_guomei ul  li:nth-child(1){
+	padding-left: 9px;
+	padding:8px 0 10px ;
+
+}
+.my_guomei .my_order li:first-child{
+	padding-left:9px ;
+}
+.my_guomei .my_order li a{
+	color: #888;
+}
+.my_guomei .my_coupon{
+	padding-left: 4px;
+}
+.my_guomei .my_coupon li{
+	float: left;
+	width:63px;
+	text-align: center;
+	padding: 8px 0 10px;
+	height: 67px;
+
+}
+.my_guomei .my_coupon li a{
+	color: #888;
+}
+.my_guomei .my_coupon li ins{
+	display: inline-block;
+	vertical-align: middle;
+	color: #cdcdcd;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+}
+.my_guomei p{
+	clear: both;
+	background: #f8f8f8;
+	padding: 10px;
+	overflow: hidden;
+	width: 260px;
+	height: 46px;
+}
+
+.my_guomei .my_track{
+	background: #f8f8f8;
+	padding: 0 0 18px 10px;
+	height: 70px;
+	overflow: hidden;
+}
+.my_guomei .my_track li{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 0 12px 10px 0;
+	background:#fff url(../images/ui.png) 0 -397px;
+}
+.my_guomei .my_track li:nth-child(4){
+	background:#fff url(../images/ui.png) 0 -397px;
+}
+
+/*企业采购*/
+header  .caigou{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	left: 0;
+	top: 30px;
+	background: #fff;
+	z-index: 9999;
+	display: none;
+}
+header .nav_right li:nth-child(3):hover .caigou{
+	display: block;
+
+}
+header .caigou a{
+	width: 200px;
+	height: 200px;
+	display: block;
+	background: url("../images/ui.png") no-repeat;
+	background-position: 0 -1511px;
+}
+
+
+/*服务中心*/
+header .nav_right li:nth-child(4):hover .service{
+	display: block;
+}
+header .service{
+	padding: 10px 15px;
+	width: 242px;
+	height: 215px;
+	position: absolute;
+	left: 0;
+	top: 30px;
+	z-index: 9999;
+	background: #fff;
+	display: none;
+}
+
+header .service p{
+	font: 700 12px/24px Arial,"Microsoft YaHei";
+	color: #898989;
+}
+
+header .service a{
+	color: #888;
+}
+header .service ul{
+	padding: 0 0 10px;
+	height: 48px;
+	/*overflow: hidden;*/
+}
+
+header .service ul li{
+	float: left;
+	font: 12px/24px Arial,"Microsoft YaHei";
+	width: 33%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	background: none;
+	padding: 0;
+}
+header .service ul li:nth-child(4){
+	background: none;
+	padding: 0;
+
+}
+header .service ul li:nth-child(6){
+	background: none;
+	padding: 0;
+
+}
+header .nav_right  .live_service{
+	color: #fff;
+	background: #dd00a7;
+	text-align: left;
+	display: block;
+	line-height: 25px;
+	height: 25px;
+	cursor: pointer;
+	font-weight: 400;
+	margin-top: 4px;
+	position: relative;
+}
+header .nav_right li:nth-child(4) .live_service:hover{
+	color: #fff;
+}
+header .live_service em{
+	position: absolute;
+	display:block;
+	font-size: 19px;
+	line-height: 25px;
+	height: 25px;
+	color: #fff;
+	top: -2px;
+	left: 100px;
+	width: 25px;
+	background: url(../images/1bg.jpg) no-repeat 5px 8px;
+}
+header .nav_right li:nth-child(4):hover a{
+	color: #5E5E5E;
+}
+
+header .nav_right li:nth-child(4) ul a:hover{
+	color: #ff0027;
+
+}
+
+/*网站导航*/
+header .nav_right li:nth-child(5):hover .inter{
+	display: block;
+}
+header .inter{
+	position: absolute;
+	top: 30px;
+	background: #fff;
+	height: 245px;
+	overflow: hidden;
+	border: 1px solid #e6e6e6;
+	left:-1029px;
+	width: 1200px;
+	z-index: 9999;
+	display: none;
+}
+header .nav_right li:nth-child(5) .inter ul li{
+	background: none;
+	padding: 0;
+}
+
+header .inter dl{
+	min-height: 120px;
+	float: left;
+	padding: 0 15px 0 40px;
+	border-left: 1px solid #f3f3f3;
+	margin: 15px 0;
+}
+header .inter dl dt{
+	font: 700 14px/14px Arial,"Microsoft YaHei";
+	line-height: 16px;
+	margin: 0 0 14px;
+}
+header .inter dl ul{
+	float: left;
+	width: 75px;
+}
+header .inter dl ul li{
+	width: 100%;
+	text-align: left;
+	font: 12px/24px Arial,"Microsoft YaHei";
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color: #888;
+}
+header .inter dl ul li:hover{
+	color: #ff0027;
+}
+
+/*国美手机*/
+header .phone{
+	position: absolute;
+	left: 0;
+	top: 30px;
+	padding: 15px;
+	font-size: 0;
+	height: 202px;
+	width: 126px;
+	z-index: 9999;
+	background: #fff;
+}
+
+header .phone a{
+	display: inline-block;
+	height: 170px;
+	width: 130px;
+	background: url(/images/ui.png);
+	background-position: 0 -799px;
+}
+/*logo*/
 .logo_serch{
 	position: relative;
 	height: 120px;
