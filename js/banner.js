@@ -1,3 +1,9 @@
+//头部
+$(".close").click(function () {
+    $(".top").css({"display":"none"})
+
+})
+
 // 导航下轮播图
 
 var oBox=document.getElementById("box");
@@ -681,3 +687,117 @@ $(function(){
                 timer=setInterval(run,3000);
             })//鼠标移除继续轮播
           })
+
+        // 右边导航
+$(".one").mouseover(function(){
+    $(".one a").eq(0).stop().animate({
+       left:-82
+    },500)
+     })
+    $(".one").mouseout(function(){
+        $(".one a").eq(0).stop().animate({
+            left:120
+        },500)
+    })
+
+$(".three").mouseover(function(){
+    $(".three a").eq(0).stop().animate({
+        left:-82
+    },500)
+})
+$(".three").mouseout(function(){
+    $(".three a").eq(0).stop().animate({
+        left:120
+    },500)
+})
+$(".gome-aside-app").mouseover(function(){
+    $(".gome-aside-app a").eq(0).stop().animate({
+        left:-140
+    },500)
+})
+$(".gome-aside-app").mouseout(function(){
+    $(".gome-aside-app a").eq(0).stop().animate({
+       left:175
+    },500)
+})
+$(".gome-aside-survey").mouseover(function(){
+    $(".gome-aside-survey a").eq(0).stop().animate({
+        left:-82
+    },500)
+})
+$(".gome-aside-survey").mouseout(function(){
+    $(".gome-aside-survey a").eq(0).stop().animate({
+        left:120
+    },500)
+})
+$(".gome-aside-service").mouseover(function(){
+    $(".gome-aside-service a").eq(0).stop().animate({
+        left:-82
+    },500)
+})
+$(".gome-aside-service").mouseout(function(){
+    $(".gome-aside-service a").eq(0).stop().animate({
+        left:120
+    },500)
+})
+
+
+//顶部
+$(window).scroll(function(){
+    var h=$(this).scrollTop();//获得滚动条距top的高度
+    //alert(h);
+    if(h>665){
+        $(".upper_box").fadeIn();
+
+    }else{
+        $(".upper_box").fadeOut();
+
+    }
+});
+
+    //每日抢购
+$(function () {
+    var i=$(this).index();
+    $(".yi").click(function(){
+        clearInterval(timer);
+        i = i>0?(--i):3;
+        $(".against  ul").eq(i).fadeIn(500).siblings("ul").fadeOut(500)//)
+    })
+    $(".er").click(function () {
+        clearInterval(timer);
+        i = i>=3?0:(++i);
+        $(".against ul").eq(i).fadeIn(500).siblings("ul").fadeOut(500)//
+
+    })
+})
+
+//抢购倒计时
+
+nowTime();
+setInterval(function(){
+    nowTime();
+},1000)
+function nowTime(){
+    var d=new Date();
+    var now=d.getTime();
+    var d2=new Date("2018/10/23 12:00:00")
+    var future=d2.getTime();
+    var dao=future-now;
+    var nHour=parseInt(dao/1000/3600);
+    var nMinute=parseInt((dao-nHour*3600*1000)/1000/60);
+    var nSecond=parseInt((dao-nHour*3600*1000-nMinute*1000*60)/1000);
+
+
+    if(nHour<10){
+        nHour="0"+nHour;
+    }
+    if(nMinute<10){
+        nMinute="0"+nMinute;
+    }
+    if(nSecond<10){
+        nSecond="0"+nSecond;
+    }
+    hour.innerHTML=nHour;
+    minute.innerHTML=nMinute;
+    second.innerHTML=nSecond;
+}
