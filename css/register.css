@@ -23,6 +23,15 @@ header h1 a{
     padding-bottom: 21px;
     background: url("../images/bgr.png") no-repeat scroll 580px -60px;
 }
+.login{
+    position: absolute;
+    top: -25px;
+    right: 20px;
+}
+.login a{
+    color: #006699;
+    padding-left: 5px;
+}
 .title{
     position: absolute;
     top: -40px;
@@ -79,13 +88,36 @@ header h1 a{
     text-align: center;
 
 }
-.w p:nth-child(4) input{
+.w p:nth-child(5) input{
     background: #e4e4e4;
 
 }
-.w p:nth-child(6) input{
+.w p:nth-child(7) input{
     background: #e4e4e4;
 
+}
+.w  p em{
+    display: block;
+    height: 36px;
+    padding: 9px 5px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    display: none;
+
+
+}
+.w p strong{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url(../images/register.png) no-repeat 0 -20px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 425px;
+    display: none;
 }
 .w p i{
     display: block;
@@ -108,10 +140,10 @@ header h1 a{
     border-image: initial;
     background: rgb(255, 255, 255);
 }
-.w p:nth-child(7) input{
+.w p:nth-child(8) input{
     width: 133px;
 }
-.w p:nth-child(7) a{
+.w p:nth-child(8) a{
     width: 110px;
     height: 36px;
     display: block;
@@ -120,14 +152,14 @@ header h1 a{
     position: absolute;
     left: 300px;
 }
-.w p:nth-child(7) a:hover{
+.w p:nth-child(8) a:hover{
     color: #5E5E5E;
 }
-.w p:nth-child(8) input{
+.w p:nth-child(9) input{
     text-align: left;
     color: #888888;
 }
-.w p:nth-child(9) input{
+.w p:nth-child(10) input{
     color: #FFF;
     text-decoration: none;
     background-color: #f64949;

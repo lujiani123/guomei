@@ -13,32 +13,47 @@
     </h1>
 </header>
 <div class="w">
+    <div class="login">
+        我已经注册，现在就<a href="#">登录</a>
+    </div>
     <ul class="title ">
         <li class="cur">个人用户注册</li>
         <li class="goto">企业用户注册</li>
     </ul>
     <p>
-        <span>用户名:</span><input type="text"/>
+        <span >用户名:</span><input id="username" type="text"/>
+        <em id="text1">4-20个字符，支持汉字、字母、数字及“-”、“_”组合</em>
+        <strong id="s1"></strong>
     </p>
     <p>
         <span>设置密码：</span><input type="text"/>
+        <em id="text2"></em>
+        <strong></strong>
     </p>
     <p>
         <span>确认密码：</span><input type="text"/>
+        <em id="text3"></em>
+        <strong></strong>
     </p>
     <p>
         <span>手机号码：</span><input type="text"/>
+        <em id="text4"></em>
+        <strong></strong>
     </p>
     <p>
         <i>>></i>
         <span>滑动验证：</span><input type="text" placeholder="请按住滑块,拖动到最右边"/>
+        <em id="text1"></em>
     </p>
     <p>
         <span>短信验证码：</span><input type="text"/>
        <a href="#">获取短信验证码</a>
+        <em id="text1"></em>
     </p>
     <p>
         <span>推荐码(选填)：</span><input type="text" placeholder="填写推荐人 推荐码 帮好友赚收入"/>
+        <em id="text1"></em>
+        <strong></strong>
     </p>
     <p>
         <span></span><input type="button" value="立即注册"/>
@@ -195,4 +210,5 @@
 </footer>
 
 </body>
+<script src="js/register.js"></script>
 </html>
