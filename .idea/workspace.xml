@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6cdb510-fdb8-4cdb-972f-be46fe677315" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-    </list>
+    <list default="true" id="c6cdb510-fdb8-4cdb-972f-be46fe677315" name="默认的" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -119,8 +117,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="146" />
-    <option name="y" value="87" />
+    <option name="x" value="127" />
+    <option name="y" value="131" />
     <option name="width" value="1297" />
     <option name="height" value="829" />
   </component>
@@ -178,15 +176,15 @@
       <updated>1540034292201</updated>
       <workItem from="1540034294676" duration="6714000" />
       <workItem from="1540082329573" duration="25463000" />
-      <workItem from="1540111304787" duration="1016000" />
+      <workItem from="1540111304787" duration="1614000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33193000" />
+    <option name="totallyTimeSpent" value="33791000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="146" y="87" width="1297" height="829" extended-state="1" />
+    <frame x="127" y="131" width="1297" height="829" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
